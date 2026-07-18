@@ -1,8 +1,8 @@
-# Friend's Message Site 🎓💌
+# Friend's Message Site 
 
 A beautifully designed, interactive time capsule built for my friends to write me letters as I cross the halfway point of my degree. The letters are sealed, safely stored in the cloud, and strictly locked behind a countdown until graduation day in June 2028.
 
-## ✨ Features
+##  Features
 
 - **Interactive 3D Lanyard:** A fully physics-based, draggable 3D student ID card mounted directly onto the page.
 - **Ambient Storytelling:** Scroll-triggered chapters with micro-animations and an ambient audio track to set the mood.
@@ -11,7 +11,7 @@ A beautifully designed, interactive time capsule built for my friends to write m
 - **Restricted Access:** The receiver's page (`/letters`) requires a secret passcode to authenticate and fetch the sealed letters.
 - **Cloud Attachments:** Photos and doodles are securely uploaded and hosted on Cloudinary.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend:** Vanilla JavaScript, HTML5, CSS3, Preact (via ESM), React Three Fiber (for 3D lanyard)
 - **Backend:** Node.js, Express.js, JWT Authentication
@@ -21,7 +21,7 @@ A beautifully designed, interactive time capsule built for my friends to write m
 
 *Note: The frontend is entirely bundler-less. It imports dependencies directly from `esm.sh`, meaning there is no build step required for the UI.*
 
-## 🚀 Quick Start (Docker)
+##  Quick Start (Docker)
 
 The easiest way to run the entire stack locally is using Docker Compose. It will spin up a blazing fast Nginx server for the frontend and a Node.js container for the backend API.
 
@@ -53,13 +53,13 @@ The easiest way to run the entire stack locally is using Docker Compose. It will
    - Public Landing Page (Write Letters): `http://localhost:3000`
    - Receiver Page (Read Letters): `http://localhost:3000/letters.html`
 
-## 📂 Project Structure
+## Project Structure
 
 - `index.html` & `app.js`: The public-facing site where friends compose and seal their letters.
 - `letters.html` & `letters.js`: The private receiver's dashboard, protected by a passcode.
 - `lanyard-mount.js`: A self-contained custom element `<lanyard-card>` running its own React root to handle the 3D physics without clashing with the vanilla Preact app.
 - `/server`: The Express.js backend API for handling letter encryption, authentication, and Cloudinary uploads.
 
-## 🔒 Security
+## Security
 
 All letters are saved in the MongoDB database, and the backend validates the current date against the `unlockAt` date. Even if someone discovers the API endpoints, the server will refuse to return the letter contents before graduation day.
