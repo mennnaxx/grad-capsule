@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The first half is done — a note for my friends</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;family=Spectral:ital,wght@0,300;0,400;0,500;1,400&amp;family=Caveat:wght@400;600&amp;family=Dancing+Script:wght@400;600&amp;family=Kalam:wght@400;700&amp;family=Gochi+Hand&amp;display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#28090f}
+  a{color:#cfa15c;text-decoration:none}
+  a:hover{color:#b6863f}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
+  @keyframes cue{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(7px);opacity:1}}
+  @keyframes sealDrop{0%{transform:translate(-50%,-140px) scale(1.9);opacity:0}55%{transform:translate(-50%,4px) scale(.82);opacity:1}72%{transform:translate(-50%,-6px) scale(1.08)}100%{transform:translate(-50%,0) scale(1);opacity:1}}
+  @keyframes lockClick{0%{transform:translate(-50%,-50%) scale(1.6);opacity:0}60%{transform:translate(-50%,-50%) scale(.85);opacity:1}100%{transform:translate(-50%,-50%) scale(1);opacity:1}}
+  @keyframes flyAway{0%{transform:translate(0,0) rotate(0deg) scale(1);opacity:1}18%{transform:translate(0,26px) rotate(-3deg) scale(1.02)}100%{transform:translate(78vw,-96vh) rotate(26deg) scale(.16);opacity:0}}
+  @keyframes fadeUp{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}
+  @keyframes floatWisp{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+  .stud-input:focus{outline:none;border-color:#b2694a}
+  .stud-chip{cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+  .stud-chip:hover{transform:translateY(-2px)}
+</style>
+<script>window.BACKEND_URL = "http://localhost:5000";</script>
+<script type="module" src="./lanyard-mount.js"></script>
+<script type="module" src="./app.js"></script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>

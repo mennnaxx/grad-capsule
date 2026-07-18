@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./server
+    container_name: friends_message_backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./server/.env
+    restart: unless-stopped
+    # Depending on your environment, you can map volumes for hot-reloading
+    # volumes:
+    #   - ./server:/app
+    #   - /app/node_modules
+
+  frontend:
+    build:
+      context: .
+    container_name: friends_message_frontend
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    depends_on:
+      - backend

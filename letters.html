@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Menna — sealed letters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&amp;family=Spectral:ital,wght@0,300;0,400;0,500;1,400&amp;family=Caveat:wght@400;600&amp;family=Dancing+Script:wght@400;600&amp;family=Kalam:wght@400;700&amp;family=Gochi+Hand&amp;display=swap" rel="stylesheet">
+<style>
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#28090f}
+  a{color:#cfa15c;text-decoration:none}
+  a:hover{color:#b6863f}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  @keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
+  @keyframes fadeUp{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}
+</style>
+<script>window.BACKEND_URL = "http://localhost:5000";</script>
+<script type="module" src="./letters.js"></script>
+</head>
+<body>
+<div id="letters"></div>
+</body>
+</html>
