@@ -102,6 +102,7 @@ app.get('/api/letters', authenticateToken, async (req, res) => {
         from: doc.from, // We return the decrypted 'from' name so the envelope can show it
         envelope: doc.envelope,
         stamp: doc.stamp,
+        to: doc.to,
         // letters (pages) and attachment are omitted
         sample: false
       }));
